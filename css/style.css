@@ -199,7 +199,7 @@ background-color: var(--dark1);
 }
 
 .skill {
-display: grid;
+/*display: grid;*/
 grid-template-columns: repeat(auto-fit,minmax(250px,auto));
 justify-content: center;
 gap: 170px;
@@ -210,6 +210,7 @@ padding-bottom: 110px;
 
 .skill h2{
 padding-bottom: 60px;
+text-align: center;
 }
 
 .skill img{
