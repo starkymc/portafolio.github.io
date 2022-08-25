@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary:#18db86;
+    --secondary:white;
+    --secondary-light:rgb(173, 173, 173);
+    --dark1:#222222;
+    --dark2:#050505;
+}
+
+header{
+    background-color: var(--dark2);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 5px 0;
+}
+body{
+    font-size: 18px;
+    font-family: 'Signika',sans-serif;
+    color: var(--secondary);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.navbar a{
+   font-size: 1.5rem;
+   padding: 10px;
+   text-decoration: none;
+   color: white;
+   margin: 20px;
+}
+
+.navbar a:hover{
+    border-bottom: var(--primary) solid;
+}
+.hero{
+    background-color: var(--dark2);
+    position: relative;
+    
+}
+
+.hero img{
+    width: 100%;
+    height: 530px;
+    opacity: 0.35;
+    
+}
+
+span{
+    color: var(--primary);
+}
+/*circle profile*/
+.profile div{
+    position: absolute;
+}
+.profile{
+display: flex;
+justify-content: center;
+}
+
+.square{
+    width: 320px;
+    height: 450px;
+    background-color: var(--dark1);
+    opacity: 0.7;
+    z-index: 10;
+    top: 70px;
+}
+
+.circle-trans{
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    border: solid 30px var(--primary);
+    opacity: .2;
+    top: 90px;
+    z-index: 19;
+}
+
+.circle{
+width: 230px;
+height: 230px;
+border-radius: 50%;
+border: solid 15px var(--primary);
+z-index: 21;
+top: 120px;
+}
+
+.profile-img{
+    top: 134px;
+    z-index: 20;
+}
+
+.profile-img img{
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+
+}
+
+.square-text {
+font-size: 1.9rem;
+color: var(--secondary);
+top: 380px;
+z-index: 11;
+}
+
+.square-text2 {
+    font-size: 1rem;
+    color: var(--secondary);
+    top: 418px;
+    z-index: 11;
+}
+
+.square-text3 {
+    font-size: 1.3rem;
+    color: var(--secondary);
+    top: 490px;
+    z-index: 11;
+}
+
+.square-text3:hover {
+    border-bottom: var(--primary) solid;
+}
+.square-text3 a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.contact-icon {
+    top: 450px;
+    z-index: 11;
+}
+
+.contact-icon img{
+    width: 40px;
+    margin: 0 10px;
+}
+
+.contact-icon img:hover{
+    transform: scale(1.6);
+}
+
+/*briefcases*/
+
+.briefcase {
+background-color: var(--dark1);
+}
+
+.briefcase-section h2 {
+    padding: 40px;
+    text-align: center;
+}
+
+.briefcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(290px,auto));
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.briefcase-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.briefcase-grid img:hover {
+    transform: scale(1.1);
+}
+
+/*skills*/
+
+section.skills {
+background-color: var(--dark1);
+}
+
+.skill {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+justify-content: center;
+gap: 170px;
+width: 90%;
+margin: 0 auto;
+padding-bottom: 110px;
+}
+
+.skill h2{
+padding-bottom: 60px;
+}
+
+.skill img{
+width: 90px;
+}
+
+.knowledge {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(110px,auto));
+justify-content: center;
+gap: 25px;
+}
+
+.tools {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(70px,auto));
+justify-content: center;
+gap: 50px;
+}
+
+
+/*tooltips*/
+.skill h3{
+    background-color: var(--dark2);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    width: 100px;
+    opacity: 0;
+    color:var(--primary)
+    transform: translate(0px,-100px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.knowledge>div:hover h3,
+.tools>div:hover h3{
+    opacity: 1;
+    transform: translate(0px,-150px);
+}
+
+/*about*/
+
+.about{
+background-color: var(--dark2);
+}
+
+
+.about-flex {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 100px;
+}
+
+
+.about p{
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 2.5rem;
+    color: var(--secondary-light);
+}
+
+.social{
+    border-left: var(--secondary) 5px solid;
+    padding-left: 50px;
+}
+
+.social img{
+    width: 60px;
+    margin: 10px;
+}
+
+.social img:hover{
+    transform: scale(1.4);
+}
+
+/*Footer*/
+footer{
+    background-color: var(--dark2);
+    text-align: center;
+    color:var(--secondary-light)
+}
+
+
+/*icon-elements*/
+
+.icon-elements {
+display: flex;
+justify-content: center;
+gap: 20px;
+padding-bottom: 200px;
+}
+
+
+
+.icon-elements a{
+display: flex;
+align-items: center;
+text-decoration: none;
+font-size: 1.5rem;
+gap: 15px;
+}
+
+.icon-elements img{
+    width:70px;
+}
+
+.icon-elements img:hover{
+    transform: scale(1.2);
+}
+
+.icon-elements span:hover{
+    color: var(--secondary);
+}
+
+/*modals*/
+.eins-modal-content{
+    max-width: 700px;
+    background-color: var(--dark1);
+}
+
+.eins-modal-preview{
+max-width: 350px;
+width: 90%;
+margin: 0 auto;
+}
+
+.eins-modal-preview img{
+width: 100%;
+padding: 0 50px 20px 0;
+}
+
+.pw-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+}
+
+.eins-modal-text p{
+    font-size: 1.1rem;
+}
+
+.eins-modal-text-2{
+    padding: 80px 0 10px;
+}
+
+.eins-modal-text-2 a{
+color: var(--secondary);
+margin: 5px;
+}
+
+
+.eins-modal-tec img{
+width: 50px;
+height: 50px;
+}
+
+/*contact form*/
+
+form{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+form>label>input {
+    background-color: var(--dark2);
+    border-radius: 10px;
+    padding: 10px 60px;
+    color: var(--secondary);
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+form>label>textarea{
+    background-color: var(--dark2);
+    border-radius: 10px;
+    padding: 50px;
+    color: var(--secondary);
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+label{
+    padding: 5px;
+}
+
+form>button{
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 10px;
+}
