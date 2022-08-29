@@ -12,4 +12,4 @@
 
 
 Link <Link target="blank">
-https://intellyia.000webhostapp.com </>
+https://intellyia.000webhostapp.com </link>
